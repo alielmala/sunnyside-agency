@@ -83,7 +83,7 @@ section > div >div{
 
 }
 section > div > div:first-child{
-    padding: 150px;
+    padding: 10%;
     max-width: 50%;
 
 }
@@ -152,24 +152,29 @@ span {
 .two-elements-header {
     position: absolute;
     text-align: center;
-    left: 25%;
-    top: 60%;
-    width: 340px;
-    font-size: 30px;
+    bottom:30%;
+    left: 50%;
+    width: 100%;
+    font-size:30px;
     color: #25564B;
+    margin-bottom: 0px;
+    transform: translate(-50%, -30%);
+
 }
 .two-elements-paragraph{
     position: absolute;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;    
-    width:340px ;
-    left:25% ;
-    top: 75%;
+    padding: 5%;
     color: #25564B;
+    margin: 0;
+    width: 340px;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
 }
 #client-testimonials {
     background-color: #FFFCF5;
+    padding: 5%;
 }
 #client-testimonials h1{
     text-align: center;
@@ -201,7 +206,7 @@ span {
 }
 #client-container p{
     color: #5A636C;
-    max-width: 320px;
+    max-width: 330px;
     text-align: center;
     padding-top: 40px;
     line-height: 30px;
@@ -250,16 +255,18 @@ footer img{
 }
 
 footer ul{
-    margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 45%;
     justify-content: space-around;
     margin-top: 40px;
+    padding-inline-start: 0px;
     
 }
 footer ul:last-child{
-    width: 15%;
-    margin-top: 80px;
+    width: 25%;
+    margin-top: 70px;
+    padding-inline-start: 0px;
+
 }
 footer li{
     list-style: none;
@@ -269,4 +276,42 @@ footer li{
 footer a{
     text-decoration: none;
     color: #13866f;
+}
+
+@media only screen and (max-width: 870px) {
+nav > ul{
+    visibility: hidden;
+}
+header > div >h1 {
+font-size: 55px;
+letter-spacing:3px;
+width: 100%;
+}
+#menu h1{
+    font-size: 25px;
+}
+#menu p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.two-elements-paragraph{
+    width: 260px;
+}
+
+#client-testimonials p{
+    font-size: 14px;
+}
+#client-testimonials h5{
+    font-size: 18px;
+}
+#client-testimonials span {
+    font-size: 14px;
+}
+#products-gallery {
+    flex-wrap: wrap;
+}
+#products-gallery img{
+    width: 50%;
+    max-width: none;
+}
 }
