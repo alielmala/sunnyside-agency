@@ -1,36 +1,42 @@
-body{
+body {
     margin: 0;
- }   
-header{
+}
+
+header {
     background-image: url("assets/image-header.jpg");
     background-color: #3DBFFF;
     padding-left: 50px;
-    padding-right: 50px ;
+    padding-right: 50px;
     padding-top: 10px;
     height: 100%;
     background-position: center bottom;
     background-size: cover;
     padding-bottom: 300px;
 }
-nav{
+
+nav {
     display: flex;
     font-family: 'Barlow';
-    
+
 }
-header a{
+
+header a {
     text-decoration: none;
-    color:white;
-    font-size: 17px;   
-    font-weight: 600; 
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
 }
-a:hover{
+
+a:hover {
     color: black;
 }
+
 ul {
     display: flex;
     margin-left: auto;
 }
-.nav-item{
+
+.nav-item {
     display: block;
     width: 75px;
     margin-top: auto;
@@ -38,12 +44,13 @@ ul {
     margin-right: 50px;
 
 }
-nav > a:first-child{
+
+nav>a:first-child {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.btn{
+.btn {
     background-color: white;
     border-radius: 30px;
     color: black !important;
@@ -51,57 +58,68 @@ nav > a:first-child{
     font-weight: bold;
     font-size: 15px;
     width: 125px;
-    height: 50px; 
-    padding-top: auto; padding-bottom: auto; 
+    height: 50px;
+    padding-top: auto;
+    padding-bottom: auto;
     border: none;
 }
-.btn:hover{
-    background-color:#C4EBFF ;
+
+.btn:hover {
+    background-color: #C4EBFF;
     color: white !important;
 }
+
 header div {
     font-family: 'Fraunces';
     color: white;
     font-weight: 900;
 }
-header div >h1 {
+
+header div>h1 {
     font-size: 65px;
     text-align: center;
     margin-top: 70px;
 }
-header div >img {
+
+header div>img {
     display: block;
-    margin-left: auto;margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 65px;
 }
 
-section > div{
+section>div {
     display: flex;
 }
-section > div >div{
+
+section>div>div {
     max-width: 50%;
 
 }
-section > div > div:first-child{
+
+section>div>div:first-child {
     padding: 10%;
     max-width: 50%;
 
 }
-section h1{
-    font-family:"Fraunces", serif;
+
+section h1 {
+    font-family: "Fraunces", serif;
     color: #23303E;
     font-size: 40px;
     font-weight: 900;
     text-align: left;
 }
+
 section p {
-    font-family:'Barlow' ;
-    color: #bebebe; 
+    font-family: 'Barlow';
+    color: #7d7e80;
     padding-bottom: 20px;
     font-weight: 600;
     font-size: 16px;
 }
-section a{
+
+section a {
     font-family: "Fraunces", serif;
     text-decoration: none;
     color: #23303E;
@@ -111,7 +129,7 @@ section a{
 
 span {
     margin: -7px;
-    display:block;
+    display: block;
     height: 12px;
     width: 125px;
     background-color: #FECC01;
@@ -120,48 +138,60 @@ span {
 
 }
 
-.learn-more-btn:hover >span{
-    opacity: 100% ;
+.learn-more-btn:hover>span {
+    opacity: 100%;
 
 }
-#menu_second{
+
+#menu_second {
     flex-direction: row-reverse;
 }
-#menu_second >div > .learn-more-btn > span{
+
+#menu_second>div>.learn-more-btn>span {
     background-color: #FD695D;
 }
+
 .two-elements {
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
 
-    
+
 }
-.two-elements div{
+
+.two-elements div {
     padding: 0px !important;
     max-width: 50%;
     display: inline-block;
     position: relative;
 
 }
-.two-elements img{
-    display: block !important;
+
+.two-elements img {
     width: 100%;
     height: 100%;
 }
+.laptop-design-img{
+    display: block;
+}
+.mobile-design-img {
+    display: none;
+}
+
 .two-elements-header {
     position: absolute;
     text-align: center;
-    bottom:30%;
+    bottom: 30%;
     left: 50%;
     width: 100%;
-    font-size:30px;
+    font-size: 30px;
     color: #25564B;
     margin-bottom: 0px;
     transform: translate(-50%, -30%);
 
 }
-.two-elements-paragraph{
+
+.two-elements-paragraph {
     position: absolute;
     text-align: center;
     padding: 5%;
@@ -172,49 +202,56 @@ span {
     left: 50%;
     transform: translate(-50%, -5%);
 }
+
 #client-testimonials {
     background-color: #FFFCF5;
     padding: 5%;
 }
-#client-testimonials h1{
+
+#client-testimonials h1 {
     text-align: center;
-    color: rgb(189, 189, 189) ;
+    color: rgb(189, 189, 189);
     font-size: 23px;
     font-weight: 700;
     letter-spacing: 3px;
     padding-top: 80px;
     margin: 0;
-    
+
 }
-#client-container{
+
+#client-container {
     display: flex;
-    
-    
+
+
 }
+
 #client-container div {
     padding: 10px;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
-#client-container img{
+
+#client-container img {
     display: block;
     border-radius: 50%;
     width: 75px;
     margin-left: auto;
     margin-right: auto;
 }
-#client-container p{
+
+#client-container p {
     color: #5A636C;
     max-width: 330px;
     text-align: center;
     padding-top: 40px;
     line-height: 30px;
     font-size: 17px;
-    
+
 }
-#client-container h5{
-    font-family:"Fraunces" ;
+
+#client-container h5 {
+    font-family: "Fraunces";
     color: #23303E;
     display: block;
     font-size: 20px;
@@ -222,96 +259,203 @@ span {
     font-weight: 900;
     padding-top: 40px;
     margin-bottom: 0px;
-   
+
 }
-#client-container span{
+
+#client-container span {
     background-color: white;
-    font-family:'Barlow' ;
+    font-family: 'Barlow';
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    
+
 }
-#products-gallery{
+
+#products-gallery {
     display: flex;
     padding-top: 150px;
     background-color: #FFFCF5;
 }
+
 #products-gallery img {
     max-width: 25%;
 }
+
 footer {
     background-color: #8CCCBF;
-    
+
     padding-top: 100px;
     padding-bottom: 50px;
 }
-footer img{
+
+footer img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
-footer ul{
+footer ul {
     margin-right: auto;
     width: 45%;
     justify-content: space-around;
     margin-top: 40px;
     padding-inline-start: 0px;
-    
+
 }
-footer ul:last-child{
+
+footer ul:last-child {
     width: 25%;
     margin-top: 70px;
     padding-inline-start: 0px;
 
 }
-footer li{
+
+footer li {
     list-style: none;
-    font-family:'Barlow' ;
+    font-family: 'Barlow';
     font-weight: bold;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: #13866f;
 }
 
 @media only screen and (max-width: 870px) {
-nav > ul{
-    visibility: hidden;
-}
-header > div >h1 {
-font-size: 55px;
-letter-spacing:3px;
-width: 100%;
-}
-#menu h1{
-    font-size: 25px;
-}
-#menu p{
-    font-size: 12px;
-    font-weight: 500;
-}
-.two-elements-paragraph{
-    width: 260px;
-}
+    nav>ul {
+        display: none;
+    }
 
-#client-testimonials p{
-    font-size: 14px;
+    header>div>h1 {
+        font-size: 55px;
+        letter-spacing: 3px;
+        width: 100%;
+    }
+
+    #menu h1 {
+        font-size: 25px;
+    }
+
+    #menu p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .two-elements-paragraph {
+        width: 260px;
+    }
+
+    #client-testimonials p {
+        font-size: 14px;
+    }
+
+    #client-testimonials h5 {
+        font-size: 18px;
+    }
+
+    #client-testimonials span {
+        font-size: 14px;
+    }
+
+    #products-gallery {
+        flex-wrap: wrap;
+    }
+
+    #products-gallery img {
+        width: 50%;
+        max-width: none;
+    }
 }
-#client-testimonials h5{
-    font-size: 18px;
-}
-#client-testimonials span {
-    font-size: 14px;
-}
-#products-gallery {
-    flex-wrap: wrap;
-}
-#products-gallery img{
-    width: 50%;
-    max-width: none;
-}
+@media only screen and (max-width: 570px) {
+    header{
+        background-image: url("assets/mobile/image-header.jpg");
+    }
+    header > div >h1 {
+        font-size: 30px; 
+        width: 100%;
+        line-height: 40px;
+       
+    }
+    header> div img {
+        position: absolute;
+        top:200px;
+        left: 50%;
+        width: 30px;
+        transform: translate(-50%);
+    }
+   
+    #menu * {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #menu h1 {
+        font-size: 30px;
+        margin: 0%;
+        max-width: 320px;
+    }
+    #menu p {
+        font-size: 16px;
+        font-weight: 600;
+        max-width: 320px;
+        line-height: 25px;
+    }
+    #menu img {
+        width: 100%;
+    }   
+    #menu > div  div{
+        max-width: none;
+        padding:60px 20px 60px 20px;
+        
+    }
+    #menu_first{
+        flex-direction: column-reverse;
+    }
+    #menu_second{
+        flex-direction: column-reverse;
+    }
+    .laptop-design-img{
+        display: none;
+    }
+    .mobile-design-img {
+        display: block;
+    }
+    .two-elements-header{
+        bottom: 150px;
+        font-size: 25px;
+        
+    }
+   
+    .two-elements-paragraph{
+        width: 260px;
+        max-width: none !important;
+        bottom: 40px;
+        font-size: 12px !important;
+        
+    }
+    #client-container {
+        flex-direction: column;
+        max-width: none;
+    }
+    h5{
+        padding-top: 0px !important;
+    }
+    #client-container > div{
+        max-width: none;
+        width: 250px;
+    }
+    #products-gallery{
+        flex-direction: column;
+    }
+    #products-gallery img{
+        width: 100%;
+    }
+    footer ul {
+        width: 90%;
+    }
+    footer ul:last-child{
+        width: 60%;
+    }
 }
