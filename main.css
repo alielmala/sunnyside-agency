@@ -194,7 +194,7 @@ span {
 .two-elements-paragraph {
     position: absolute;
     text-align: center;
-    padding: 5%;
+    padding: 5% 0% 5% 0%;
     color: #25564B;
     margin: 0;
     width: 340px;
@@ -342,6 +342,21 @@ footer a {
         font-size: 12px;
         font-weight: 500;
     }
+    #menu{
+        height: auto;
+    }
+    #menu > div > div {
+        padding: 7%;
+        max-width: 50%;
+    }
+  
+    .laptop-design-img{
+        display: block;
+    }
+    .mobile-design-img {
+        display: none;
+    }
+    
 
     .two-elements-paragraph {
         width: 260px;
@@ -371,6 +386,8 @@ footer a {
 @media only screen and (max-width: 570px) {
     header{
         background-image: url("assets/mobile/image-header.jpg");
+        background-position: center bottom;
+        background-size: cover;
     }
     header > div >h1 {
         font-size: 30px; 
@@ -399,7 +416,7 @@ footer a {
     #menu p {
         font-size: 16px;
         font-weight: 600;
-        max-width: 320px;
+        max-width: 280px;
         line-height: 25px;
     }
     #menu img {
@@ -429,7 +446,7 @@ footer a {
     }
    
     .two-elements-paragraph{
-        width: 260px;
+        width: 260px !important;
         max-width: none !important;
         bottom: 40px;
         font-size: 12px !important;
@@ -447,11 +464,9 @@ footer a {
         width: 250px;
     }
     #products-gallery{
-        flex-direction: column;
+        padding-top:80px ;
     }
-    #products-gallery img{
-        width: 100%;
-    }
+   
     footer ul {
         width: 90%;
     }
