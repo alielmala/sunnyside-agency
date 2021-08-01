@@ -14,11 +14,13 @@ header {
     background-position: center bottom;
     background-size: cover;
     padding-bottom: 300px;
+    padding-top: 20px;
 }
 
 nav {
     display: flex;
     font-family: 'Barlow';
+    
 
 }
 .logo-box {
@@ -114,7 +116,9 @@ section>div>div:first-child {
     max-width: 50%;
 
 }
-
+.slogan{
+    padding-top: 80px;
+}
 section h1 {
     font-family: "Fraunces", serif;
     color: #23303E;
@@ -126,6 +130,8 @@ section h1 {
 section p {
     font-family: 'Barlow';
     color: #7d7e80;
+    padding-top: 20px;
+    line-height: 30px;
     padding-bottom: 20px;
     font-weight: 600;
     font-size: 16px;
