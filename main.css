@@ -1,7 +1,9 @@
 body {
     margin: 0;
 }
-
+*{
+    margin: 0px;
+}
 header {
     background-image: url("assets/image-header.jpg");
     background-color: #3DBFFF;
@@ -19,7 +21,13 @@ nav {
     font-family: 'Barlow';
 
 }
-
+.logo-box {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.hamburger {
+    display: none;
+}
 header a {
     text-decoration: none;
     color: white;
@@ -62,11 +70,15 @@ nav>a:first-child {
     padding-top: auto;
     padding-bottom: auto;
     border: none;
+    
 }
 
 .btn:hover {
     background-color: #C4EBFF;
     color: white !important;
+}
+.nav-triangle{
+    display: none   ;
 }
 
 header div {
@@ -324,15 +336,89 @@ footer a {
 }
 
 @media only screen and (max-width: 870px) {
+    .navbar{
+        flex-direction: column;
+    }
     nav>ul {
         display: none;
+        padding-bottom:2rem ;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: white;
+        margin-left: 0px;
+        padding-inline-start: 0px;
+        text-align: center;
+        margin-block-start: 0px;
+    }
+    .logo-box{
+        display: flex;
+    }
+    
+    .nav-item{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        width: 80%;
+    }
+    .nav-item > a{
+        color: rgb(128, 128, 128);
+    }
+    .btn{
+        width: 150px;
+        background-color: hsl(51, 100%, 49%);
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: hsl(51, 100%, 47%);
+    }
+    /*----------------------------------------- responsive nav bar design ----------------------*/
+
+    .hamburger{
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
 
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .bar {
+        background-color: #FFFCF5;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto; 
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .active {
+        display: block;
+    }
+    .slogan-active{
+        display: none;
+    }
+    .nav-triangle{
+        
+        height: 0;
+        width: 0;
+        border-bottom: 20px solid white;
+        border-left: 20px solid transparent;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+  /*---------------------------------------------  end   ----------------------------------------*/
     header>div>h1 {
         font-size: 55px;
         letter-spacing: 3px;
         width: 100%;
     }
+    
 
     #menu h1 {
         font-size: 25px;

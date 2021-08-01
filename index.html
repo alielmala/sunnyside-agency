@@ -11,22 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
-
+    <script src="https://use.fontawesome.com/f5f6953f3a.js"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#"><img src="assets/logo.svg" alt="logo" width="150px" height="auto"></a>
+        <nav class="navbar" >
+            <div class="logo-box">
+                <a href="#"><img src="assets/logo.svg" alt="logo" width="150px" height="auto"></a>
+                <div class="hamburger ">
+                
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="nav-triangle"></div>
 
-            <ul>
-                <li class="nav-item"><a href="#">About</a> </li>
-                <li class="nav-item"><a href="#">Services</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <button class="btn">CONTACT</button>
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="#">About</a> </li>
+                <li class="nav-item">
+                    <a href="#">Services</a></li>
+                <li class="nav-item">
+                    <a href="#">Projects</a></li>
+                <button class="btn nav-item">CONTACT</button>
             </ul>
+
+            
         </nav>
-        <div>
+        
+        <div class="slogan">
             <h1>WE ARE CREATIVES</h1>
             <img src="assets/icon-arrow-down.svg" alt="" width="40px" ;>
         </div>
@@ -37,7 +53,7 @@
 
     <section id="menu">
         <div id="menu_first">
-            <div>
+            <div >
                 <h1>Transform your brand</h1>
                 <p>We are a full-service creative agency specializing in helping brands grow fast.
                     Engage your clients through compelling visuals that do most of the marketing
@@ -143,5 +159,18 @@
         </ul>
     </footer>
 </body>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const slogan = document.querySelector(".slogan");
+const navTriangle = document.querySelector(".nav-triangle");
+hamburger.addEventListener("click", mobileMenu);
 
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    slogan.classList.toggle("slogan-active");
+    navTriangle.classList.toggle("active");
+}
+</script>
 </html>
