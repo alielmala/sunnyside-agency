@@ -131,12 +131,16 @@ section p {
     font-family: 'Barlow';
     color: #7d7e80;
     padding-top: 20px;
-    line-height: 30px;
     padding-bottom: 20px;
     font-weight: 600;
     font-size: 16px;
 }
-
+#menu_first p{
+    line-height: 30px;
+}
+#menu_second p{
+    line-height: 25px;
+}
 section a {
     font-family: "Fraunces", serif;
     text-decoration: none;
